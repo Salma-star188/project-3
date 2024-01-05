@@ -7,6 +7,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+     <!---- lightslider cdn , https://cdnjs.com/libraries/lightslider  -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/css/lightslider.min.css">
     <link rel="stylesheet" href="CSS/style.css">
 </head>
 <body>
@@ -35,7 +37,7 @@
             <!-- Responsive -->
             <ul class="mobile-responsive">
                 <li><a href="">Menu</a></li>
-                <li><a href="" class="toggler">+</a></li>
+                <li><a class="toggler">+</a></li>
             </ul>
             <!-- Responsive -->
             <ul>
@@ -153,6 +155,32 @@
 
     </div>
    
-    </script>
+  <!-- https://jquery.com/download/--Download the compressed, production jQuery 3.7.1 -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script> 
+  <!---- lightslider cdn , https://cdnjs.com/libraries/lightslider  -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/js/lightslider.min.js"></script>
+  <!-- lightslider,Examples-Adaptive height -->
+  <script>
+      $(document).ready(function() {
+      $('#adaptive').lightSlider({
+          adaptiveHeight:true,
+          item:1,
+          slideMargin:0,
+          loop:true
+      });
+
+  });
+  
+
+     
+
+      $(document).ready(function(){
+ $('.toggler').click(function() {
+          $('.main-menu > ul:nth-of-type(2) ').toggle();
+       
+      });
+});
+
+  </script>
 </body>
 </html>

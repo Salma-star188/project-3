@@ -242,28 +242,50 @@ ul.lSPager.lSpg {
     .mobile-responsive{
         display: flex !important;
         justify-content: space-between !important;
+        position: relative;
+     
     }
     .main-menu > ul:nth-of-type(2){ /*2nd ul of .main-menu class*/
         flex-direction: column;
         border-top: 1px solid gainsboro; 
+        text-align: center;
         display: none;
-        overflow: hidden;
+     
     }
-
-    /* .drop {
-        display: block;
-        position: relative;/* does not block the content beneath it*/
     .main-menu > ul:nth-of-type(2) >li > a{
         display:inline-block;
-       
+        text-align: center;
        padding:10px 7px;
+ 
      
+     
+    }
+    
+    .main-menu > ul:nth-of-type(2) >li > a:hover{
+        width: 97%;
+        overflow: hidden;
+        clear: both;
+    }
+
+    .drop {
+     
+        position: relative;
+        display: none;
+        top:-5px;
+     
+        
     }
   
     .drop > li > a{
-        display: block;
-        width: auto;
-        padding:8px;
+display: inline-block;
+width: 94%;
+        
+       
+    } 
+
+    .main-menu > ul >li:hover .drop{
+        display:block;
+        
     }
      /* Responsive Navigation bar */
      .content-holder,.contact-details{
@@ -286,7 +308,7 @@ ul.lSPager.lSpg {
      .product-holder , .services-holder
      {
         display:block;
-    
+     
          
      }
     article .product,article .services{

@@ -37,7 +37,7 @@
             <!-- Responsive -->
             <ul class="mobile-responsive">
                 <li><a href="">Menu</a></li>
-                <li><a href="" class="toggler">+</a></li>
+                <li><a class="toggler">+</a></li>
             </ul>
             <!-- Responsive -->
             <ul>
@@ -153,10 +153,14 @@
     });
     
 
-        $('.toggler').click(function() {
+       
+
+        $(document).ready(function(){
+   $('.toggler').click(function() {
             $('.main-menu > ul:nth-of-type(2) ').toggle();
-            $('.drop').css({'display':'block','position':'relative'});
+         
         });
+});
 
     </script>
 </body>
